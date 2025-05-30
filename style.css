@@ -18,7 +18,7 @@ body {
 .container {
   text-align: center;
   padding: 20px;
-  background-color: #ff0101; /* Deixa o container com fundo branco para contraste */
+  background-color: #fbff01; /* Deixa o container com fundo branco para contraste */
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
