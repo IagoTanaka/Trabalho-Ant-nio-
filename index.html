@@ -3,14 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contador de Cliques Interativo. Clique no botão para ver o contador aumentar.">
   <title>Contador de Cliques</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <button id="clickButton">Clique aqui!</button>
-    <div id="clickCount">0</div>
-  </div>
+  <main class="container">
+    <section>
+      <button id="clickButton" aria-label="Clique para aumentar o contador">Clique aqui!</button>
+      <p id="clickCount" aria-live="polite">0</p>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>

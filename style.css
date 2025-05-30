@@ -5,37 +5,52 @@
 }
 
 body {
+  font-family: 'Arial', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #3434be;
-  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
   color: #333;
-  text-align: center;
 }
 
 .container {
   text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 button {
-  font-size: 20px;
+  font-size: 18px;
   padding: 15px 30px;
-  background-color: #ebe70c;
+  background-color: #007BFF;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
   background-color: #0056b3;
+  transform: scale(1.05); /* Animação ao passar o mouse */
+}
+
+button:active {
+  transform: scale(1);
 }
 
 #clickCount {
-  font-size: 40px;
-  margin-top: 20px;
+  font-size: 48px;
   font-weight: bold;
+  margin-top: 20px;
+  color: #333;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+#clickCount:focus {
+  outline: 3px solid #007BFF; /* Destaque ao focar no número */
 }
