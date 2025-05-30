@@ -1,57 +1,64 @@
-/* Reseta os margens e paddings, e garante que box-sizing seja border-box */
+/* Resetando margens e paddings, e garante que o box-sizing seja border-box para todos os elementos */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Estilo do body: centraliza tudo na tela e define o fundo */
 body {
-  font-family: 'Arial', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%); /* Gradiente suave */
-  color: #333;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%); /* Gradiente suave no fundo */
+    color: #333;
 }
 
+/* Estilo do container que envolve o botão e o contador */
 .container {
-  text-align: center;
-  padding: 20px;
-  background-color: #fbff01; /* Deixa o container com fundo branco para contraste */
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco para contraste */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
+/* Estilo do botão */
 button {
-  font-size: 18px;
-  padding: 15px 30px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efeito de transição no hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilo do botão quando o mouse passa por cima (hover) */
 button:hover {
-  background-color: #0056b3;
-  transform: scale(1.05); /* Animação ao passar o mouse */
+    background-color: #0056b3;
+    transform: scale(1.05); /* Leve aumento no tamanho do botão */
 }
 
+/* Efeito ao pressionar o botão (click) */
 button:active {
-  transform: scale(1);
+    transform: scale(1);
 }
 
+/* Estilo do contador de cliques */
 #clickCount {
-  font-size: 48px;
-  font-weight: bold;
-  margin-top: 20px;
-  color: #333;
-  transition: transform 0.2s ease, color 0.3s ease;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+    transition: transform 0.2s ease, color 0.3s ease; /* Animação suave para alterações */
 }
 
+/* Destaque ao focar no número de cliques */
 #clickCount:focus {
-  outline: 3px solid #007BFF; /* Destaque ao focar no número */
+    outline: 3px solid #007BFF; /* Borda azul quando o número está em foco */
 }

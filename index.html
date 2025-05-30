@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contador de Cliques Interativo. Clique no botão para ver o contador aumentar.">
-  <title>Contador de Cliques</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <main class="container">
-    <section>
-      <button id="clickButton" aria-label="Clique para aumentar o contador">Clique aqui!</button>
-      <p id="clickCount" aria-live="polite">0</p>
-    </section>
-  </main>
 
-  <script src="script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Cliques</title>
+    <!-- Incluindo o arquivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- O container principal que contém o botão e o contador -->
+    <div class="container">
+        <!-- Botão que o usuário vai clicar -->
+        <button id="clickButton">Clique aqui!</button>
+        <!-- Exibição do número de cliques -->
+        <p id="clickCount">0</p>
+    </div>
+
+    <!-- O script que contém a lógica do contador -->
+    <script src="script.js"></script>
 </body>
+
 </html>

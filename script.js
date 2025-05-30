@@ -1,25 +1,25 @@
-// Obtemos os elementos do DOM
+// Selecionando os elementos do DOM (botão e contador)
 const button = document.getElementById('clickButton');
 const countDisplay = document.getElementById('clickCount');
 
-// Inicializa o contador
+// Inicializando o contador com valor 0
 let clickCount = 0;
 
-// Função que atualiza o contador
-function updateCounter() {
-  clickCount++; // Incrementa o contador
-  countDisplay.textContent = clickCount; // Atualiza a exibição
-  animateClickCount();
+// Função que é chamada toda vez que o botão é clicado
+function handleClick() {
+    clickCount++;  // Incrementa o valor do contador
+    countDisplay.textContent = clickCount;  // Atualiza o contador exibido na tela
+    animateClickCount();  // Chama a função de animação
 }
 
-// Função de animação para o contador
+// Função que adiciona uma animação ao contador de cliques
 function animateClickCount() {
-  // Adiciona uma animação visual quando o contador é atualizado
-  countDisplay.style.transform = "scale(1.1)";
-  setTimeout(() => {
-    countDisplay.style.transform = "scale(1)";
-  }, 200);
+    // Aumenta o contador em escala para dar efeito visual
+    countDisplay.style.transform = "scale(1.1)";
+    setTimeout(() => {
+        countDisplay.style.transform = "scale(1)";  // Retorna o contador ao tamanho original
+    }, 200);  // A animação dura 200ms
 }
 
-// Evento de clique no botão
-button.addEventListener('click', updateCounter);
+// Adicionando um evento de clique no botão
+button.addEventListener('click', handleClick);
