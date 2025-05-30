@@ -1,3 +1,4 @@
+/* Reseta os margens e paddings, e garante que box-sizing seja border-box */
 * {
   margin: 0;
   padding: 0;
@@ -10,14 +11,14 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f9f9f9;
+  background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%); /* Gradiente suave */
   color: #333;
 }
 
 .container {
   text-align: center;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #ff0101; /* Deixa o container com fundo branco para contraste */
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
