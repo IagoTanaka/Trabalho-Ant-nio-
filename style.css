@@ -1,1 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+button {
+  font-size: 20px;
+  padding: 15px 30px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#clickCount {
+  font-size: 40px;
+  margin-top: 20px;
+  font-weight: bold;
+}
